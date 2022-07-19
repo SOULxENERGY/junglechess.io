@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess game</title>
+    <script src="index.js" type="module" defer></script>
+    <style>
+        body{
+
+            overflow: hidden;
+            background-image: url("g4au_t8ix_210816.jpg");/*<a href="https://www.freepik.com/vectors/nature-scene">Nature scene vector created by brgfx - www.freepik.com</a>*/
+            background-repeat:repeat;
+
+background-size:cover;
+            
+        }
+
+
+#canvas1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgb(235, 186, 186);
+    transform: translate(-50%,-50%);
+    margin: 0px;
+    padding: 0px;
+   
+
+
+
+
+}
+
+img{
+
+    display: none;
+}
+audio{
+    display: none;
+}
+#promote{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgba(20, 169, 240,0.7);
+
+
+
+
+}
+    </style>
+</head>
+<body >
+    <canvas id="canvas1"></canvas>
+    <button id="printBox">
+
+
+    </button>
+    <img src="tortoise-removebg-preview.png" id="tortoise">
+    <img src="lion-removebg-preview.png" id="lion">
+    <img src="tiger-removebg-preview.png" id="tiger">
+    <img src="horse-removebg-preview.png" id="horse">
+    <img src="elephant-removebg-preview.png" id="elephant">
+    <img src="wolf-removebg-preview.png" id="wolf">
+    
+    <audio src="Pen Clicking .mp3" id="select"></audio>
+    <audio src="roar-47757.mp3" id="tigersound"></audio>
+    <audio src="lion-roar-6011.mp3" id="lionsound"></audio>
+    <audio src="HVC57LD-stallion-horse.mp3" id="horsesound"></audio>
+    <audio src="elephant-trumpets-growls-6047.mp3" id="elephantsound"></audio>
+    <audio src="wolf-howl-6310.mp3" id="wolfsound"></audio>
+<div id="promote" style="display: none;" >
+
+    <form>
+        <h1>YOU HAVE UNLOCKED THE MYSTICAL POWER OF A TURTLE</h1>
+        <label for="cars"><h2> Transform the turtle into:</h2>  </label>
+
+        <select id="promoteform">
+            <option value="queen">Tiger</option>
+          <option value="horse" >horse</option>
+         
+
+        </select>
+
+
+
+    </form>
+    
+<button id="visibility" style="width: 50px;height:50px">submit</button>
+</div>
+
+   
+   <script>
+    
+document.getElementById("visibility").addEventListener("click",()=>{
+
+canvas1.style.display="block";
+promote.style.display="none";
+
+
+
+});
+
+
+
+
+
+
+    </script>
+
+
+
+
+    
+
+
+    
+</body>
+</html>
