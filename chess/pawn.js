@@ -59,7 +59,7 @@ class BlackPawn{
                 ret="completed";
         
                 c.updateBox(x,y,this.team,"yes");
-                if(y==1){
+                if(y==c.findBox(0,0).y){
                     c.makeCanvasInvisible();
                     c.visibility.addEventListener("click",()=>{
                         c.replaceItemfromAnArray(this,this.team,"white");
@@ -153,7 +153,7 @@ class WhitePawn{
                     ret="completed";
             
                     c.updateBox(x,y,this.team,"yes");
-                    if(y==660.75){
+                    if(y==c.findBox(7,0).y){
 
                         c.makeCanvasInvisible();
                         c.visibility.addEventListener("click",()=>{
